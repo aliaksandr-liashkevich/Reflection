@@ -23,11 +23,6 @@ namespace Net.Lab.Liashkevich.Reflection.Comparer
         public bool Compare<T>(T first, T second)
             where T : class
         {
-            return Compare(first as object, second as object);
-        }
-
-        public bool Compare(object first, object second)
-        {
             if ((first == null && second != null) 
                 || (first != null && second == null))
             {
